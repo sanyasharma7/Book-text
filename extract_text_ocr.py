@@ -1,8 +1,9 @@
-
 import fitz  # PyMuPDF
 import pytesseract
 from PIL import Image
 import io
+
+pytesseract.pytesseract.tesseract_cmd = "/home/runner/.nix-profile/bin/tesseract"
 
 def extract_text_ocr(pdf_path):
     doc = fitz.open(pdf_path)
