@@ -1,0 +1,4 @@
+gdown
+pymupdf
+pytesseract
+pillow
